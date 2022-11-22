@@ -1,8 +1,7 @@
 import "./card.css";
 import quotesJson from "./quotes.json";
 
-//import { VscQuote } from "react-icons/vsc";
-//import { ImArrowRight2 } from "react-icons/im";
+
 import { useState } from "react";
 export function QuoteBox() {
   let textColor = randomColor();
@@ -11,7 +10,7 @@ export function QuoteBox() {
     <div className="container" style={{ background: textColor }}>
       <div className="card" style={{ color: textColor }}>
         <div>
-          {/* <VscQuote className="comilla" /> */}
+          
           <h1 className="comilla">11</h1>
           <p>{quotesJson[number].quote}</p>
         </div>
@@ -40,11 +39,11 @@ export function QuoteBox() {
                 }
               }, 400);
 
-              //console.log(card.style.transform);
+            
             }}
-            style={{ background: textColor }}
+          
           >
-            {/* <ImArrowRight2 /> */}
+       
             Next
           </button>
         </div>
